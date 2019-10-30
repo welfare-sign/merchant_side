@@ -2,7 +2,7 @@
     <li class="w-sign-item">
         <div :class="['icon', {'disabled': !signed || missed}, {'final': final}]">
             <span class="badge" v-if="badge">{{badge}}</span>
-            <x-img class="ico-img" :default-src="icon"/>
+            <x-img class="ico-img" :default-src="icon" />
         </div>
         <label :class="{'disabled-text': !signed || missed}">{{label}}</label>
     </li>
@@ -33,7 +33,7 @@ export default {
         }
     },
     computed: {
-        badge () {
+        badge() {
             let label
             if (this.missed) {
                 label = '待补签'
@@ -44,7 +44,7 @@ export default {
             }
             return label
         },
-        icon () {
+        icon() {
             let src
             if (this.final) {
                 src = require('@/assets/sign_gift.png')
@@ -62,7 +62,7 @@ export default {
     width: 44px;
     height: 44px;
     border-radius: 22px;
-    box-shadow: 0px 0px 3px 3px rgba(255,141,0,0.4);
+    box-shadow: 0px 0px 3px 3px rgba(255, 141, 0, 0.4);
     .linear-gradient-horizontal();
     position: relative;
     margin-bottom: 10px;
@@ -87,13 +87,13 @@ export default {
     }
 }
 .disabled-text {
-    color: @assist-font-color
+    color: @assist-font-color;
 }
 .badge {
     position: absolute;
     top: -10px;
     right: -10px;
-    background: linear-gradient(135deg,#F24343 0%,#E02020 100%);
+    background: linear-gradient(135deg, #f24343 0%, #e02020 100%);
     font-size: @assist-font-size;
     color: #fff;
     padding: 1px 4px;

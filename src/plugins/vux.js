@@ -1,5 +1,14 @@
 import Vue from 'vue'
-import { XButton, Group, CellBox, XImg, Qrcode, Cell, WechatPlugin, AjaxPlugin } from 'vux'
+import {
+	XButton,
+	Group,
+	CellBox,
+	XImg,
+	Qrcode,
+	Cell,
+	WechatPlugin,
+	AjaxPlugin
+} from 'vux'
 
 Vue.component('x-button', XButton)
 Vue.component('group', Group)

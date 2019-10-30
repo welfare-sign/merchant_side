@@ -1,16 +1,16 @@
 <template>
-  <div class="w-merchant-item">
-    <x-img class="logo" :default-src="logo" />
-    <div class="content">
-      <div>
-        <h2>{{name}}</h2>
-        <p class="sub">{{address}}</p>
-      </div>
-      <div>
-          <span class="desc-label">{{desc}}</span>
-      </div>
+    <div class="w-merchant-item">
+        <x-img class="logo" :default-src="logo" />
+        <div class="content">
+            <div>
+                <h2>{{name}}</h2>
+                <p class="sub">{{address}}</p>
+            </div>
+            <div>
+                <span class="desc-label">{{desc}}</span>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 <script>
 /**
@@ -18,25 +18,25 @@
  * @author 顾超<beyondc@foxmail.com>
  */
 export default {
-  name: 'WMerchantItem',
-  props: {
-    name: {
-      type: String,
-      required: true
-    },
-    address: {
-      type: String,
-      required: true
-    },
-    desc: {
-      type: String,
-      required: true
-    },
-    logo: {
-      type: String,
-      required: true
+    name: 'WMerchantItem',
+    props: {
+        name: {
+            type: String,
+            required: true
+        },
+        address: {
+            type: String,
+            required: true
+        },
+        desc: {
+            type: String,
+            required: true
+        },
+        logo: {
+            type: String,
+            required: true
+        }
     }
-  }
 }
 </script>
 <style lang="less" scoped>
